@@ -1,0 +1,26 @@
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+X = (name1,name2)
+
+Y = "".join(X)
+t = Y.lower().count('t')
+r = Y.lower().count('r')
+u = Y.lower().count('u')
+e = Y.lower().count('e')
+true = t+r+u+e
+l = Y.lower().count('l')
+o = Y.lower().count('o')
+v = Y.lower().count('v')
+e = Y.lower().count('e')
+love = l+o+v+e
+result = int(str(true)+str(love))
+if (result < 10)or(result > 90):
+    print(f'your love score is {result}, you go together like coke and mentos.')
+elif (40 < result < 50):    
+    print(f'your love score is {result},you are alright together.')
+else:
+    print(f'your love score is {result}.')    
+
+
