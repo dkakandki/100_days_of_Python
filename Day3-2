@@ -1,0 +1,53 @@
+
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+
+SP = 15
+MP = 20
+LP = 25
+PSP = 2
+PMLP = 3
+EXC = 1
+
+if size == "S" and add_pepperoni == "Y" and extra_cheese == "Y":
+    Total =  SP+PSP+EXC
+    print("Your final bill is: "+"$"+str(Total)+".")
+elif size == "S" and add_pepperoni == "N" and extra_cheese == "Y":
+    Total =  SP+EXC
+    print("Your final bill is: "+"$"+str(Total)+".")
+elif size == "S" and add_pepperoni == "Y" and extra_cheese == "N":
+    Total =  SP+PSP    
+    print("Your final bill is: "+"$"+str(Total)+".")
+elif size == "S" and add_pepperoni == "N" and extra_cheese == "N":
+    print("Your final bill is: "+"$"+str(SP)+".")
+
+if size == "M" and add_pepperoni == "Y" and extra_cheese == "Y":
+    Total =  MP+PMLP+EXC
+    print("Your final bill is: "+"$"+str(Total)+".")
+elif size == "M" and add_pepperoni == "N" and extra_cheese == "Y":
+    Total =  MP+EXC
+    print("Your final bill is: "+"$"+str(Total)+".")
+elif size == "M" and add_pepperoni == "Y" and extra_cheese == "N":
+    Total =  MP+PMLP    
+    print("Your final bill is: "+"$"+str(Total)+".")
+elif size == "M" and add_pepperoni == "N" and extra_cheese == "N":
+    print("Your final bill is: "+"$"+str(MP)+".")
+
+if size == "L" and add_pepperoni == "Y" and extra_cheese == "Y":
+    Total =  LP+PMLP+EXC
+    print("Your final bill is: "+"$"+str(Total)+".")
+elif size == "L" and add_pepperoni == "N" and extra_cheese == "Y":
+    Total =  LP+EXC
+    print("Your final bill is: "+"$"+str(Total)+".")
+elif size == "L" and add_pepperoni == "Y" and extra_cheese == "N":
+    Total =  LP+PMLP    
+    print("Your final bill is: "+"$"+str(Total)+".")
+elif size == "L" and add_pepperoni == "N" and extra_cheese == "N":
+    print("Your final bill is: "+"$"+str(LP)+".")
+
+
+
+
+
