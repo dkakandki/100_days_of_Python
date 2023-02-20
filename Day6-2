@@ -3,4 +3,13 @@ for n in range(0,101):
     if (n % 2) == 0:
         sum_of_even_numbers += n
         
-print(f'Sum of even numbers from 1 to 100 is: {sum_of_even_numbers}')        
+print(f'Sum of even numbers from 1 to 100 is: {sum_of_even_numbers}') 
+
+
+
+sum_of_odd_numbers = 0
+for n in range(0,101):
+    if (n % 2) != 0:
+        sum_of_odd_numbers += n
+        
+print(f'Sum of odd numbers from 1 to 100 is: {sum_of_odd_numbers}') 
